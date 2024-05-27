@@ -38,6 +38,7 @@ permissions:
     - delete:user.property:jira
     - storage:app
     - write:group:jira
+    - storage:app
   content:
     styles:
       - 'unsafe-inline'
