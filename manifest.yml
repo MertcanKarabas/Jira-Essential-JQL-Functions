@@ -1,0 +1,47 @@
+modules:
+  jira:globalPage:
+    - key: essential-jql-functions-hello-world-page
+      resource: main
+      resolver:
+        function: resolver
+      title: Essential JQL Functions
+  function:
+    - key: resolver
+      handler: index.handler
+resources:
+  - key: main
+    path: static/hello-world/build
+permissions:
+  scopes:
+    - 'read:jira-work'
+    - 'read:issue-meta:jira'
+    - 'read:issue-security-level:jira'
+    - 'read:issue.vote:jira'
+    - 'read:issue.changelog:jira'
+    - 'read:avatar:jira'
+    - 'read:issue:jira'
+    - 'read:status:jira'
+    - 'read:user:jira'
+    - 'read:field-configuration:jira'
+    - manage:servicedesk-customer
+    - read:jira-user
+    - write:jira-work
+    - read:application-role:jira
+    - read:group:jira
+    - manage:jira-project
+    - manage:jira-configuration
+    - read:user-configuration:jira
+    - write:user-configuration:jira
+    - delete:user-configuration:jira
+    - read:user.property:jira
+    - write:user.property:jira
+    - delete:user.property:jira
+    - storage:app
+    - write:group:jira
+  content:
+    styles:
+      - 'unsafe-inline'
+app:
+  id: ari:cloud:ecosystem::app/f72fcfac-3041-4f05-a5b8-fde3da0beb16
+  runtime:
+    name: nodejs18.x

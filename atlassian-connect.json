@@ -1,0 +1,8 @@
+{
+    "baseUrl": "http://mertcankarabas.atlassian.net",
+    "key": "f72fcfac-3041-4f05-a5b8-fde3da0beb16",
+    "scopes": [
+        "read", "write"
+    ],
+    "modules": {}
+}
